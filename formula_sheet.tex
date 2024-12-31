@@ -1,0 +1,201 @@
+% ME 2202 Formula Sheet
+% Copyright (C) 2025  Noah Frank
+%
+% This program is free software: you can redistribute it and/or modify
+% it under the terms of the GNU Affero General Public License as
+% published by the Free Software Foundation, either version 3 of the
+% License, or (at your option) any later version.
+%
+% This program is distributed in the hope that it will be useful,
+% but WITHOUT ANY WARRANTY; without even the implied warranty of
+% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+% GNU Affero General Public License for more details.
+%
+% You should have received a copy of the GNU Affero General Public License
+% along with this program.  If not, see https://www.gnu.org/licenses/.
+
+\documentclass{article}
+\usepackage{amsmath, amsfonts, amssymb}
+\usepackage[margin=1in]{geometry}
+\usepackage{multicol}
+\usepackage{nopageno}
+\renewcommand{\baselinestretch}{0.8}
+
+\title{\vspace{-2cm}ME 2202 Formula Sheet}
+\author{\vspace{-5ex}}
+\date{\vspace{-5ex}}
+
+\begin{document}
+
+\maketitle
+
+\begin{multicols}{2}[\raggedcolumns]
+
+\section*{\centering{Module 1}}
+\[
+\vec v=\dot r\hat e_r+r\dot\theta\hat e_\theta \qquad
+\vec a=\bigl(\ddot r-r\dot\theta^2\bigr)\hat e_r+\bigl(r\ddot\theta+2\dot r\dot\theta\bigr)\hat e_\theta
+\]
+
+\[
+\vec a=\ddot s\hat e_t+\frac{\dot s^2}{\rho}\hat e_n
+\]
+
+\section*{\centering{Module 3}}
+\[
+W=\int_{s_1}^{s_2}F\cos\theta\,ds \qquad
+W=\int_{t_1}^{t_2}\vec F\cdot\vec v\,dt \qquad
+\]
+
+\[
+W_g=-mg(\Delta h) \qquad
+W_{sp}=-\frac{1}{2}k\bigl(\delta_2^2-\delta_1^2\bigr)
+\]
+
+\[
+W_{f_k}=-\mu_kN(\Delta s) \qquad
+T=\frac{1}{2}mv_C^2+\frac{1}{2}I_{zz}^C\omega^2
+\]
+
+\section*{\centering{Module 4}}
+\[
+{}^\mathcal A\vec v_P={}^\mathcal A\vec v_Q+\bigl(\vec\omega_{\mathcal B/\mathcal A}\times\vec r_{P/Q}\bigr)
+\]
+
+\[
+{}^\mathcal A\vec a_P={}^\mathcal A\vec a_Q+\bigl(\vec\alpha_{\mathcal B/\mathcal A}\times\vec r_{P/Q}\bigr)-\bigl(\omega_{\mathcal B/\mathcal A}^2\vec r_{P/Q}\bigr)
+\]
+
+\[
+\vec a_{IC}=R\omega^2\hat\jmath \qquad
+\vec a_G=R|\alpha|\hat e_t+\frac{(R\omega)^2}{\rho_G}\hat e_n \qquad
+\]
+
+\[
+\vec a_{IC}=\biggl(1+\frac{R}{\rho_G}\biggr)R\omega^2\hat e_n
+\]
+
+\columnbreak
+
+\section*{\centering{Module 5}}
+\[
+{}^\mathcal A\vec v_P={}^\mathcal A\vec v_{O_\mathcal B}+{}^\mathcal B\vec v_P+\bigl(\vec\omega_{\mathcal B/\mathcal A}\times\vec r_{P/O_\mathcal B}\bigr)
+\]
+
+\[
+\begin{split}
+    {}^\mathcal A\vec a_P={}^\mathcal A\vec a_{O_\mathcal B}+{}^\mathcal B\vec a_P+\bigl(\vec\alpha_{\mathcal B/\mathcal A}\times\vec r_{P/O_\mathcal B}\bigr) \\
+    \qquad-\bigl(\omega_{\mathcal B/\mathcal A}^2\vec r_{P/O_\mathcal B}\bigr)+2\bigl(\vec\omega_{\mathcal B/\mathcal A}\times{}^\mathcal B\vec v_P\bigr)
+\end{split}
+\]
+
+\section*{\centering{Module 6}}
+\[
+\vec H_P=\vec H_C+\vec r_{C/P}\times m\vec v_C
+\]
+
+\[
+\vec H_P=\vec r_{C/P}\times m\vec v_P+I_{zz}^P\omega_z\hat k
+\]
+
+\section*{\centering{Module 7}}
+
+\[
+W=\int_{\theta_1}^{\theta_2}M\,d\theta
+\]
+
+\section*{\centering{Module 8}}
+\[
+I_{zz}^P=I_{zz}^C+mr_{C/P}^2
+\]
+
+\[
+\vec H_P=\vec H_C+\vec r_{C/P}\times m\vec v_C
+\]
+
+\[
+\vec H_P=\vec r_{C/P}\times m\vec v_P+I_{zz}^P\omega_z\hat k
+\]
+
+\end{multicols}
+
+\section*{\centering{Module 9}}
+
+\[
+\vec\omega_{\mathcal B/\mathcal A}=-\vec\omega_{\mathcal A/\mathcal B} \qquad
+\vec\omega_{\mathcal B/\mathcal A}=\vec\omega_{\mathcal B/\mathcal C}+\vec\omega_{\mathcal C/\mathcal A} \qquad
+\vec\alpha_{\mathcal B/\mathcal A}=\vec\alpha_{\mathcal B/\mathcal C}+\vec\alpha_{\mathcal C/\mathcal A}+(\vec\omega_{\mathcal C/\mathcal A}\times\vec\omega_{\mathcal B/\mathcal C})
+\]
+
+\[
+{}^\mathcal A\vec a_P={}^\mathcal A\vec a_Q+\bigl(\vec\alpha_{\mathcal B/\mathcal A}\times\vec r_{P/Q}\bigr)+\bigl(\vec\omega_{\mathcal B/\mathcal A}\times\bigl(\vec\omega_{\mathcal B/\mathcal A}\times\vec r_{P/Q}\bigr)\bigr)
+\]
+
+\[
+{}^\mathcal A\vec a_P={}^\mathcal A\vec a_{O_\mathcal B}+{}^\mathcal B\vec a_P+\bigl(\vec\alpha_{\mathcal B/\mathcal A}\times\vec r_{P/O_\mathcal B}\bigr)+\bigl(\vec\omega_{\mathcal B/\mathcal A}\times\bigl(\vec\omega_{\mathcal B/\mathcal A}\times\vec r_{P/O_\mathcal B}\bigr)\bigr)+2\bigl(\vec\omega_{\mathcal B/\mathcal A}\times{}^\mathcal B\vec v_P\bigr)
+\]
+
+\section*{\centering{Module 10}}
+
+\[
+T_x=
+\begin{bmatrix}
+1 & 0 & 0 \\
+0 & \cos\theta & \sin\theta \\
+0 & -\sin\theta & \cos\theta
+\end{bmatrix}
+\qquad
+T_y=
+\begin{bmatrix}
+\cos\theta & 0 & -\sin\theta \\
+0 & 1 & 0 \\
+\sin\theta & 0 & \cos\theta
+\end{bmatrix}
+\qquad
+T_z=
+\begin{bmatrix}
+\cos\theta & \sin\theta & 0 \\
+-\sin\theta & \cos\theta & 0 \\
+0 & 0 & 1
+\end{bmatrix}
+\]
+
+\begin{multicols}{3}
+
+\[
+\begin{split}
+    I_{xx}^P&=I_{xx}^C+m\bigl(\bar y^2+\bar z^2\bigr) \\
+    I_{yy}^P&=I_{yy}^C+m\bigl(\bar z^2+\bar x^2\bigr) \\
+    I_{zz}^P&=I_{zz}^C+m\bigl(\bar x^2+\bar y^2\bigr)
+\end{split}
+\]
+
+\columnbreak
+
+\[
+\begin{split}
+    I_{yz}^P&=I_{yz}^C-m\bar y\bar z \\
+    I_{zx}^P&=I_{zx}^C-m\bar z\bar x \\
+    I_{xy}^P&=I_{xy}^C-m\bar x\bar y
+\end{split}
+\]
+
+\columnbreak
+
+\[
+\begin{split}
+    \dot H_{C,x}&=I_{xx}^C\alpha_x-\bigl(I_{yy}^C-I_{zz}^C\bigr)\omega_y\omega_z \\
+    \dot H_{C,y}&=I_{yy}^C\alpha_y-\bigl(I_{zz}^C-I_{xx}^C\bigr)\omega_z\omega_x \\
+    \dot H_{C,z}&=I_{zz}^C\alpha_z-\bigl(I_{xx}^C-I_{yy}^C\bigr)\omega_x\omega_y
+\end{split}
+\]
+
+\end{multicols}
+
+\[
+(I)_\mathcal B=T\,(I)_\mathcal A\,T^T \qquad
+\vec r_{C/P}=\bar x\hat\imath+\bar y\hat\jmath+\bar z\hat k \qquad
+\vec H_P=\vec r_{C/P}\times m\vec v_P+I^P\vec\omega
+\]
+
+\end{document}
